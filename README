@@ -1,0 +1,8 @@
+Just a quick program to demonstrate that cylinder collision detection is indeed a little bit faster than sphere collision detection
+
+With N=2*10**4 I get:
+
+ sphere collisions:        2370 time=  0.573760986    
+ cylinder collisions:        7322 time=  0.413791955    
+
+So cylinders are about 25% faster, for the same number of comparisons (with no optimisations - no tree, no verlet lists, just a straight N^2 loop)
